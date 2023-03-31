@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,11 +40,13 @@ static class ProjectViewHolder extends RecyclerView.ViewHolder{
        private TextView MainPlace;
        private TextView DescriptionPlace;
         private ImageView ImagePlace;
+        private RatingBar RatingBar;
     public ProjectViewHolder(@NonNull View itemView) {
         super(itemView);
         MainPlace = itemView.findViewById(R.id.text_view_main);
         DescriptionPlace = itemView.findViewById(R.id.text_view_definition);
         ImagePlace = itemView.findViewById(R.id.image_view_display);
+        RatingBar = itemView.findViewById(R.id.rating_bar);
     }
 
 
@@ -51,6 +54,7 @@ static class ProjectViewHolder extends RecyclerView.ViewHolder{
         MainPlace.setText(project.name);
         DescriptionPlace.setText(project.description);
         ImagePlace.setImageResource(project.image);
+        RatingBar.setRating(project.decimalValue);
     }
 
 

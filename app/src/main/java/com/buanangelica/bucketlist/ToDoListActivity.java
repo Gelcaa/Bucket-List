@@ -14,15 +14,15 @@ public class ToDoListActivity extends AppCompatActivity {
         RecyclerView list = findViewById(R.id.recycler_view_bucket_list);
 
         Project[] projects = {
-                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist),
-                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist),
-                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist),
-                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist),
-                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist),
-                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist),
-                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist),
-                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist),
-                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist)
+                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist,5),
+                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist,4),
+                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist,5),
+                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist,5),
+                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist,4),
+                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist,5),
+                new Project("Graduate","Graduate from college with flying colors! ",R.drawable.todolist,5),
+                new Project("Masteral","Take a masteral degree in foreign countries",R.drawable.todolist,4),
+                new Project("Explore","Explore the world and enjoy every moment!",R.drawable.todolist,5)
         };
 
         ProjectAdapter adapter = new ProjectAdapter(projects);

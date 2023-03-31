@@ -54,6 +54,15 @@
             android:textColor="#888888"
             android:textSize="14sp" />
 
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card_view_item_container"
+            android:layout_marginStart="12dp"
+            android:rating="3.5"/>
+
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
